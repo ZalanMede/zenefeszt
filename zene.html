@@ -6,21 +6,136 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zenefeszt</title>
     <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body class="section1">
-    <h1 class="mid">Zenefeszt 2023</h1>
-    <h2 class="mid">Valami Szlogen kell ide :D</h2>
+    <h1 class="mid" style="color: aliceblue;">Zenefeszt 2023</h1>
+    <br>
+    <h2 class="mid" style="color: aliceblue;">Valami Szlogen kell ide :D</h2>
     <script src="zenehatterblend.js"></script>
-    <div class="jobb">
-        <p>hihi</p>
+    <script src="infoscuccmindkettore.js"></script>
+    <script>
+        function poof(text){
+            document.getElementById(text).className='inactive';
+        }
+    </script>
+
+    <div class="alittlespace">-</div>
+
+    <div class="jobb" class="container-fluid-handmade">
+        <img src="./kepek/vinyl-record.png" alt="hanglemez képe" id="nagylemez">    
     </div>
 
-    <div id="record-container">
-        <img src="./kepek/vinyl-record.png" alt="hanglemez képe" id="half">
+    <div class="alittlespace">-</div>
+    <div class="alittlespace">-</div>
+
+    <div class="container-fluid-handmade"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5525.557130116156!2d18.9417344!3d46.1750635!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47431ff68c345f97%3A0x69dc026d095b3402!2sPet%C5%91fi-sziget!5e0!3m2!1sen!2shu!4v1684765135523!5m2!1sen!2shu" width="700px" height="600px" style="border: 2px solid black" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="terkep"></iframe></div>
+
+    <div id="mapcont">
+        <div id="foodmapforzene" class="container-fluid-handmade">
+            <div id="bolt1" onclick="setToActive('binfo1', 'binfo2', 'binfo3'); poof(kivalasztaselott)"><p>Asd</p></div>
+            <div id="bolt2" onclick="setToActive('binfo2', 'binfo1', 'binfo3'); poof(kivalasztaselott)"><p>Asd</p></div>
+            <div id="bolt3" onclick="setToActive('binfo3', 'binfo1', 'binfo2'); poof(kivalasztaselott)"><p>Asd</p></div>
+        </div>
+
+        <div id="infomapforzene">
+            <div id="kivalasztaselott" class="active">
+                <p>Válasszon ki egy boltot a térképen!</p>
+            </div>
+            <div id="binfo1" class="inactive">
+                <h2>Szupi dolgok</h2>
+                <br>
+                <br>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint quasi delectus, libero voluptatum consequuntur commodi sequi nulla ad, molestiae deserunt ipsam fugit sunt provident, sit accusamus iste cumque tenetur pariatur.</p>
+            </div>
+            <div id="binfo2" class="inactive">
+                <h2>SZUPIBB dolgok</h2>
+                <br>
+                <br>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint quasi delectus, libero voluptatum consequuntur commodi sequi nulla ad, molestiae deserunt ipsam fugit sunt provident, sit accusamus iste cumque tenetur pariatur.</p>
+            </div>
+            <div id="binfo3" class="inactive">
+                <h2>LEG SZUPIBB dolgok</h2>
+                <br>
+                <br>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint quasi delectus, libero voluptatum consequuntur commodi sequi nulla ad, molestiae deserunt ipsam fugit sunt provident, sit accusamus iste cumque tenetur pariatur.</p>
+            </div>
+        </div>
     </div>
+
+    <div class="main">
+        <div class="carousel">
+            <div class="carousel__item carousel__item--visible">
+                <div class="top" >
+                    <div class="icons">
+                        <a href=""><img class="icon" src="./kepek/spotify.png"/><h4>Spotify</h4></a>
+                        <a href=""><img class="icon" src="./kepek/yt.png"/><h4>Youtube</h4></a>
+                    </div>
+                    <img class="artist_img" src="./kepek/img.jpg"/>
+                </div>
+                <div class="bottom">
+                    <h2>Gazsi</h2>
+                    <p>Leírás Leírás Leírás Leírás Leírás Leírás Leírás Leírás Leírás Leírás Leírás Leírás Leírás Leírás Leírás Leírás Leírás Leírás Leírás </p>
+                </div>
+            </div>
+            <div class="carousel__item">
+                <div class="top" >
+                    <div class="icons">
+                        <a href=""><img class="icon" src="./kepek/spotify.png"/><h4>Spotify</h4></a>
+                        <a href=""><img class="icon" src="./kepek/yt.png"/><h4>Youtube</h4></a>
+                    </div>
+                    <img class="artist_img" src="./kepek/img2.png"/>
+                </div>
+                <div class="bottom">
+                    <h2>Gazsi</h2>
+                    <p>Leírás Leírás Leírás Leírás Leírás Leírás Leírás Leírás Leírás Leírás Leírás Leírás Leírás Leírás Leírás Leírás Leírás Leírás Leírás Leírás </p>
+                </div>
+            </div>
+            <div class="carousel__item">
+                <div class="top" >
+                    <div class="icons">
+                        <a href=""><img class="icon" src="./kepek/spotify.png"/><h4>Spotify</h4></a>
+                        <a href=""><img class="icon" src="./kepek/yt.png"/><h4>Youtube</h4></a>
+                    </div>
+                    <img class="artist_img" src="./kepek/img3.jpg"/>
+                </div>
+                <div class="bottom">
+                    <h2>Gazsi</h2>
+                    <p>Leírás Leírás Leírás Leírás Leírás Leírás Leírás Leírás Leírás Leírás Leírás Leírás Leírás Leírás Leírás Leírás Leírás Leírás Leírás Leírás </p>
+                </div>
+            </div>
+
+            <div class="carousel__item">
+                <div class="top" >
+                    <div class="icons">
+                        <a href=""><img class="icon" src="./kepek/spotify.png"/><h4>Spotify</h4></a>
+                        <a href=""><img class="icon" src="./kepek/yt.png"/><h4>Youtube</h4></a>
+                    </div>
+                    <img class="artist_img" src="./kepek/img4.jpg"/>
+                </div>
+                <div class="bottom">
+                    <h2>Gazsi</h2>
+                    <p>Leírás Leírás Leírás Leírás Leírás Leírás Leírás Leírás Leírás Leírás Leírás Leírás Leírás Leírás Leírás Leírás Leírás Leírás Leírás Leírás </p>
+                </div>
+            </div>
+      
+            <div class="carousel__actions">
+              <button id="carousel__button--prev" aria-label="Previous slide"><</button>
+              <button id="carousel__button--next" aria-label="Next slide">></button>
+            </div>
+        </div>
+    </div>
+    <script src="atmenet.js"></script>
     <div id="zenetohaldiv">
 <!--      <a href="hal.html"> -->
             <button id="zenetohalgomb"><span>Előző szám~</span></button>
     </div>
 </body>
 </html>
+<!--  Ne lopkodj, vagy mérges leszek >:c     - Zalán    -->

@@ -1,39 +1,154 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
 .mid{
     text-align: center;
 }
 
-.jobb{
-    float: right;
-    border: 3px solid black;
-    margin: 5px;
-    margin-top: 150px;
-    padding: 5px;
-}
-
-#record-container{
-    position: absolute;
-    height: 2px;
-    width: auto;
-    display: inline-block;
-}
-
-#half {
-    position: relative;
-    height: 650px;
-    width: auto;
-    right: 55%;
-    border: 1px solid black;
+.alittlespace{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    font-size: 0px;
 }
 
 .section1 {
     height: 5000px;
-    background-color: rgb(60, 4, 139)
+    background-color: rgb(51, 0, 51);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23404' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23505'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
   }
 
 .section2 {
     height: 5000px;
-    background-color: rgb(65,105,225)
+    background-color: rgb(65,105,225);
 }
+
+.container-fluid-handmade{
+    width:100%;
+    padding-right:15px;
+    padding-left:15px;
+    margin-right:auto;
+    margin-left:auto;
+}
+/*                  !               Elso resz                 !                */
+
+.jobb{
+    float: left;
+    max-width: 50%;
+    height: auto;
+    border: 3px solid black;
+    margin-top: 10px;
+    padding: 5px;
+    display: flex;
+}
+
+#nagylemez{
+    position: relative;
+    right: 500px;
+    height: 950px;
+    width: auto;
+    display: flex;
+    animation:spin 25s linear infinite;
+}
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.terkep{
+    float:right;
+    margin-right: 75px;
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+
+#mapcont{
+    display: flex;
+    margin: 1px black solid;
+    margin-top: 150vh;
+    margin-bottom: 50px;
+}
+
+#foodmapforzene{
+    position: relative;
+    float: left;
+    background-image: url(kepek/petofiszigetplacc.png);
+    height: 700px;
+    width: 700px;
+    background-size: cover;
+    margin-left: 50px;
+}
+
+#infomapforzene{
+    position: relative;
+    float: right;
+    margin-right: 100px;
+    color: white;
+    max-width: 50%;
+    height: 500px;
+}
+
+/*              !                     BOLTOK                        !           */
+
+#kivalasztaselott{
+    z-index: -1;
+    text-overflow: clip;
+}
+
+#bolt1{
+    position:relative;
+    left: 65px;
+    top: 65px;
+}
+
+#bolt2{
+    position:relative;
+    left: 205px;
+    top: 130px;
+}
+
+#bolt3{
+    position:relative;
+    left: 205px;
+    top: 130px;
+}
+
+#binfo1{
+    float: right;
+    color: blanchedalmond;
+    margin-bottom: 15px;
+    border-radius:50px;
+    background:linear-gradient(180deg, #0033ff 0%, #00a2ff 100%);
+    height: 700px;
+    padding: 15px;
+    text-align: center; 
+    max-width: 75%;
+}
+
+#binfo2{
+    float: right;
+    color: red;
+    margin-bottom: 15px;
+    border-radius:50px;
+    background:linear-gradient(180deg, #0033ff 0%, #00a2ff 100%);
+    height: 700px;
+    padding: 15px;
+    text-align: center; 
+    max-width: 75%;
+}
+
+#binfo3{
+    float: right;
+    color: chartreuse;
+    margin-bottom: 15px;
+    border-radius:50px;
+    background:linear-gradient(180deg, #0033ff 0%, #00a2ff 100%);
+    height: 700px;
+    padding: 15px;
+    text-align: center; 
+    max-width: 75%;
+}
+
+
+/*           !               Switchek                    !           */
+
 
 #haltozenediv{
     margin: auto;
@@ -84,9 +199,8 @@
 
 #zenetohaldiv{
     margin: auto;
-    margin-top: 255vh;
+    margin-top: 100px;
     width: 50%;
-    border: 3px solid black;
     padding: 10px;
     align-items: center;
     justify-content: center;
@@ -94,7 +208,7 @@
 }
 
 #zenetohalgomb{
-    background-color: teal;
+    background-color: rgba(0, 109, 128, 0.6);
     border-radius: 8px;
     padding: 5px;
     display: inline-block;
@@ -116,23 +230,197 @@
   }
 
 #zenetohalgomb span:after {
-    content: '\00bb';
+    content: "«";
     position: absolute;
     opacity: 0;
     top: 0;
-    right: -20px;
+    right: 1900px;
     transition: 0.5s;
 }
 
 #zenetohalgomb:hover span {
-    padding-right: 25px;
+    padding-left: 25px;
 }
 
 #zenetohalgomb:hover span:after {
     opacity: 1;
-    right: 0;
+    right: 90;
 }
 
 #zenetohalgomb:hover{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+
+/*               !              Valogatos dolog                 !             */
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 25%;
+    min-width: 100%;
+    width: auto;
+}
+
+.carousel {
+    overflow: hidden;
+    max-width: 600px;
+    min-width: 280px;
+    height: 300px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 3px 3px 3px 3px rgba(0, 2, 134, 0.582)
+}
+
+.top{
+    height: 35%;
+    width: 100%;
+    background-color: rgb(52, 49, 231);
+    display: flex;
+    align-items: end;
+    justify-content: center;
+} 
+
+.icons{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.icons h4{
+    opacity: 40%;
+}
+
+.icons a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.icons a:hover .icon{
+    opacity: 100%;
+}
+
+.icons a:hover h4{
+    opacity: 100%;
+}
+
+.icon{
+    height: 30px;
+    width: 30px;
+    object-fit: fill;
+    opacity: 40%;
+    margin-right: 10px;
+    margin-top: -5px;
+}
+
+.artist_img{
+    position: absolute;
+    bottom: 50%;
+    width: 20%;
+    height: 40%;
+    border-radius: 50%;
+    object-fit: fill;
+    border: 5px solid rgb(67, 49, 231);
+}
+
+.bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.bottom h2{
+    margin-top: 20px;
+    font-size: 25px;
+    margin-bottom: 0;
+}
+
+.bottom p{
+    width: 75%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+  .carousel .carousel__item,
+  .carousel .carousel__item--hidden {
+    display: none;
+}
+  
+  
+.carousel .carousel__item--visible {
+    display: block;
+    animation: fadeVisibility 0.5s;
+    background-color: white;
+    min-width: 280px;
+    height: 100%;
+}
+  
+.carousel .carousel__actions {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+}
+  
+.carousel .carousel__actions button {
+    border-radius: 50px;
+    border: 0;
+    font-weight: bold;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+  
+.carousel .carousel__actions button#carousel__button--prev {
+    margin-left: 20px;
+}
+  
+.carousel .carousel__actions button#carousel__button--next {
+    margin-right: 20px;
+}
+
+#carousel__button--next:hover, #carousel__button--prev:hover{
+    background-color: rgba(128, 128, 0, 0.658);
+}
+  
+@keyframes fadeVisibility {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: opacity linear;
+    }
+}
+
+/*@media screen (max-width:600px){
+    
+}*/
+
+/*          !                 Innentol vannak a js cuccok, amiket nem szabad elfelejtenem             !                  */
+
+.active{
+    display: block;
+}
+
+.inactive{
+    display: none; 
 }

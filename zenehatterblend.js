@@ -1,4 +1,4 @@
-const [red, green, blue] = [60, 4, 139]
+const [red, green, blue] = [51, 0, 51]
 const section1 = document.querySelector('.section1')
 
 window.addEventListener('scroll', () => {
