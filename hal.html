@@ -5,19 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Halászlé feszt</title>
+    <link rel="icon" type="image/x-icon" href="./kepek/fish.png">
     <link rel="stylesheet" href="css.css">
 </head>
 <body class="section2">
     <!--Is broken idk whyyyyy (I need it to be invisible and work, so I can put a mute button on it laterrrr)-->
-    <div id="music"><embed src="music/rain.mp3" autostart="true" loop="true" hidden="true"></div>
-
-    <h1 class="mid">Halászlé feszt 2023</h1>
-    <h2 class="mid">Valami Szlogen kell ide :D</h2>
+    <div id="music"><embed src="music and vids/rain.mp3" autostart="true" loop="true" hidden="true"></div>
     <script src="halhatterblend.js"></script>
+
+    <div class="kozeperekoszi-info">
+        <h1>Halászlé fesztivál 2023</h1>
+        <h4>Július 6-tól 8-ig</h4> <br> <br>
+        <a class="button" href="#terkepcsaknemakarmukodni">Helyszín</a>  <br> <br> <br>
+        <a class="button" href="#kepekoldalra">Képek A Halászlé Fesztiválról</a> <br> <br> <br>
+        <a class="button" href="#vidi">Riport A Halászlé Fesztiválról</a> <br> <br> <br>
+        <a class="button" href="#haltozenediv">Zenefeszt Részletek</a>
+    </div>
+
+    <div id="terkepcsaknemakarmukodni"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1678.7400606698277!2d18.9505585095803!3d46.17750035636684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47431ff374a4257d%3A0xf7004d10126f7a17!2zQmFqYSwgU3plbnRow6Fyb21zw6FnIHTDqXI!5e1!3m2!1sen!2srs!4v1685821617397!5m2!1sen!2srs" style="border: black 1px solid;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="iframehal"></iframe></div>
     
-    <div id="haltozenediv">
-<!--       <a href="zene.html"> --> 
+    <div id="kepekjumpgomb">
+        <div id="kepekoldalra">
+            <img style="height: 500px; " src="./kepek/hf1.jpg" alt="Halfőzés kép">
+            <img style="height: 500px; " src="./kepek/hf2.jpg" alt="Halfőzés kép">
+            <img style="height: 500px; " src="./kepek/hf3.jpg" alt="Halfőzés kép">
+        </div>
+    </div>
+
+    <div class="kozeperekoszi" id="vidi">
+        <video controls>
+            <source src="./music and vids/Bajaihalfozofeszt - a riporterrel semmi gond sincs.mp4" type="video/mp4">
+        Most komolyan nem megy a videó? Ez egy költői kérdés volt amúgy.
+        </video>
+    </div>
+
+    <div id="haltozenediv" class="kozeperekoszi">
+        <a href="zene.html">
             <button id="haltozenegomb"><span>Merülj mélyebre</span></button>
+        </a>
+    </div>
+    <div>
+        <a href="forras.html"><p style="text-align: center; top: 1000px; position: relative;">A forrást keresed? Itt van :D</p></a>
     </div>
 </body>
 </html>
